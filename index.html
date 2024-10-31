@@ -4,18 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        :root {
+            --primary-color: ;
+            --secondary-color: rgba(255, 141, 54, 0.2); 
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+                column-gap: 0px;
+            }
+            
+        .home:hover {
+            cursor:pointer;
+            width: 100%;
+            text-align: center;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            transition: ease-in 0.2s;
+        }
+
+        .about:hover {
+            cursor:pointer;
+            width: 100%;
+            text-align: center;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            transition: ease-in 0.2s;
+            }
+
+        .service:hover {
+            cursor:pointer;
+            width: 100%;
+            text-align: center;
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            transition: ease-in 0.2s;
+            }
+
+        
+        }
+        nav {
+            padding: 16px;
+            /* background-color: rgb(227, 255, 184); */
+            display: flex;
+            justify-content: flex-end;
+            gap: 50px;
+        }
+
+    </style>
 </head>
 <body>
-    <div>
+    <div class="navbar-nav">
         <nav>
-            <h1>Home</h1>
-            <h1>About</h1>
-            <h1>Service</h1>
+            <div class="home">Home</div>
+            <div class="about">About</div>
+            <div class="service">Service</div>
         </nav>
     </div>
 
-<button>
-    
-</button>
+<button onclick="hidupkanAlert();">Continue</button>
+
+<script>
+    function hidupkanAlert() {
+        alert('Menyala')
+        alertSudahHidup()
+    }
+
+    function alertSudahHidup() {
+        alert('Jangan lupa makan')
+    }
+</script>
 </body>
 </html>
